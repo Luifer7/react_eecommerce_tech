@@ -23,7 +23,9 @@ const Header = ({categorias}) => {
                 <SideBar categorias={categorias} />
                 
                 <Link to={'/'} className='text-decoration-none m-0' >
-                <h4 className='text-white fw-bold fuente-titulo m-0 text-center'>Eecommerce</h4>
+                <h4 className='text-white fw-bold fuente-titulo m-0 text-center'>
+                Eecommerce
+                  </h4>
                 </Link>
                 
               </div>

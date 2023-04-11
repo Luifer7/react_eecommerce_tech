@@ -17,12 +17,13 @@ const Home  = () => {
    const {mensaje} = useContext(CarritoContext);
    const {categorias, productos, marcas } = useHome() 
    const {notification, isActive} = useContext(NotificationContext);
+   
 
     return ( 
         <Fragment>
 
             <Header categorias={categorias} />
-            
+         
             <Banner />
 
             <Slider content={categorias} haveNavigation={true} tipo='text' />

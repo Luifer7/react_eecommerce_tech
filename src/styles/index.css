@@ -455,7 +455,6 @@ body {
     padding: 5px;
     background-color: white;
     max-height: 500px;
-    *overflow: auto;
     min-width: 300px;
     box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.74);
 }
