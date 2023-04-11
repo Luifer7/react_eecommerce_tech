@@ -1,0 +1,254 @@
+
+
+.vistas-admin{
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(110deg, #0275d8 60%, #f7f7f7 60%);
+    font-family: 'Oswald', sans-serif;
+}
+
+.drawer {
+    position: absolute;
+    z-index: 2;
+  }
+  
+
+  
+.oulet {
+    max-height: 100vh;
+    overflow: auto;
+  }
+  .oulet::-webkit-scrollbar {
+    width: 13px;     /* Tamaño del scroll en vertical */
+    height: 13px;    /* Tamaño del scroll en horizontal */
+    transition: 1s ease all;
+  }
+  .oulet::-webkit-scrollbar-thumb {
+    background: #747373;
+    border-radius: 4px;
+    transition: 1s ease all;
+  }
+  .oulet::-webkit-scrollbar-thumb:hover {
+    background: #0275d8;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .oulet::-webkit-scrollbar-thumb:active {
+    background-color: #0275d8;
+  }
+  .oulet::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+  }
+  .oulet::-webkit-scrollbar-track:hover,
+  .oulet::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+  }
+
+
+  .page {
+    position: absolute;
+
+  }
+  
+  .page-enter {
+    opacity: 0;
+    transform: scale(.9);
+    transition: .3s ease all;
+  }
+  
+  .page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .page-exit {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  
+  .page-exit-active {
+    opacity: 0;
+    transform: scale(1);
+    transition: .5s ease all;
+  }
+  
+
+  
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #0275d8;
+  cursor: pointer;
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  width: 100%;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 1px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.tabla-categorias {
+  min-height: 300px;
+}
+
+.custom-td-fecha {
+  width: 150px;
+  max-width: 150px;
+  font-size: .9em;
+
+}
+
+.custom-td-acciones {
+  width: 100px;
+  max-width: 100px;
+}
+
+.form-edit {
+  margin: 3px;
+  border: none;
+  outline: #0275d8;
+  width: 90%;
+}
+.form-edit:focus {
+  border: 2px solid rgba(0, 47, 255, 0.753);
+}
+.btn-delete{
+  transition: .6s ease all;
+}
+
+.btn-delete:hover{
+ color: rgba(160, 2, 2, 0.993);
+ transform: scale(1.1);
+}
+.btn-delete:active{
+  color: rgba(160, 2, 2, 0.993);
+  transform: scale(.8);
+ }
+
+ .box-detalles {
+  transition: .6s ease all;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+ }
+
+ .box-detalles:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.box-img{
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-delete-image{
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: .6s ease all;
+  display: flex; align-items: center; justify-content: center;
+}
+.btn-delete-image:hover{
+  transform: scale(1.1);
+}
+.btn-delete-image:active{
+  transform: scale(.9);
+}
+.poster-border {
+  border: 8px solid rgba(6, 196, 230, 0.884);
+}
+
+.text-portada {
+  position: absolute;
+  top: -10px;
+}
+
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .30rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+/* 
+
+ 
+    
+            
+            
+*/
+
+

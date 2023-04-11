@@ -1,0 +1,19 @@
+.link-text-span{
+    color: white;
+    font-weight: bold;
+}
+
+.actions-link {
+    font-size: .8em;
+    text-decoration: none;
+    transition: .7s ease all;
+}
+
+.actions-link:hover {
+    color: rgb(10, 7, 7);
+    transform: scale(1.1);
+}
+
+.actions-link:active {
+    transform: scale(.9);
+}
