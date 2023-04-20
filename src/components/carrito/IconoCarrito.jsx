@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import Notificacion from "../helpers/Notificacion";
-
 import useCarrito from "../../hook/useCarrito";
 import ProductoCarrito from "./ProductoCarrito";
 import ScrollLink from "../helpers/ScrollLink";
+import { useGetWidth } from "../../hook/useGetWidth";
 
 const IconoCarrito = () => {   
     
     // Utiliza el hook useCarrito
     const {carrito, notificacion, eliminaProducto, actualizarCarrito, agregarNotificacion, guardarValorTotal} = useCarrito();
+    const { width } = useGetWidth()
 
     return (        
         <ul style={{listStyle: "none", margin: "0", padding: "0"}}>
@@ -29,8 +29,9 @@ const IconoCarrito = () => {
                         </span>
                     :null}                    
                 </Link>    
-
-                <div className="carrito" >
+                
+                {  width > 585 &&
+                    <div className="carrito" >
 
                     <div className="w-100" >
                     { !carrito.length > 0 
@@ -108,7 +109,9 @@ const IconoCarrito = () => {
                         }
                     </div>
                 
-                </div>
+                    </div>
+                }
+                
             
             </li>
 

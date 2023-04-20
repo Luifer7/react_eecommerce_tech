@@ -14,7 +14,7 @@ const UserAuth = () => {
 
         { isResolve 
         ?
-        <div  className="d-flex align-items-center justify-content-center gap-2">
+        <div  className="d-flex align-items-center justify-content-center gap-3 gap-sm-2">
 
          
                   {

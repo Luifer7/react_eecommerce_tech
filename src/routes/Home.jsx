@@ -12,6 +12,7 @@ import lista from '../components/helpers/listas';
 import { useHome } from '../hook/useHome';
 import NotificationContext from '../context/notificationContext' 
 
+
 const Home  = () => {
 
    const {mensaje} = useContext(CarritoContext);
@@ -21,7 +22,7 @@ const Home  = () => {
 
     return ( 
         <Fragment>
-
+         
             <Header categorias={categorias} />
          
             <Banner />

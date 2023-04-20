@@ -17,10 +17,8 @@ import SearchView from "./routes/SearchView";
 import ProfileView from "./routes/ProfileView";
 import  {NotificationProvider}  from "./context/notificationContext"
 
-
 function App() {
 
-  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -80,7 +78,7 @@ function App() {
 
 
           <NotificationProvider>
- 
+           
           {/* Vista de rutas */}
           <RouterProvider router={router} />    
             

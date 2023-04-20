@@ -13,11 +13,13 @@ import { useHome } from "../hook/useHome";
 import CuadriculaProductos from "../components/temporal/CuadriculaProductos";
 import NotificationContext from "../context/notificationContext";
 import Notificacion from "../components/helpers/Notificacion";
+import useCarrito from "../hook/useCarrito";
 
 const ProductView = () => {
     
     const {notification, isActive} = useContext( NotificationContext );
     const {categorias} = useHome()
+    const {carrito} = useCarrito()
 
     const {name, id} = useParams()
     const [ producto, setProducto] = useState({})
@@ -89,7 +91,7 @@ const ProductView = () => {
                     <Slider content={categorias} tipo='text' haveNavigation={true} />
 
                     <h1 className="px-3 text-uppercase fw-bold mt-3">
-                        {producto?.marca} {producto?.referencia}  </h1>
+                        {producto?.marca} {producto?.referencia} {JSON.stringify(carrito)} </h1>
                     <hr />
                     
                     <div className="w-100 row p-2">
@@ -99,7 +101,7 @@ const ProductView = () => {
                             <div  > 
                             { boll && url ?
                                 <ContentZoom 
-                                zoomPercent={200} 
+                                zoomPercent={200}
                                 largeImageUrl={url}
                                 imageUrl={url}
                                 contentHeight={400}

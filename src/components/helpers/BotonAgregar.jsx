@@ -7,7 +7,8 @@ import { useNavigate } from "react-router-dom";
 const BotonAgregar = ({articulo, estilo}) => {
 
     
-    const{cambio,guardarCambio, agregarCarrito, agregarMensaje} = useContext(CarritoContext);
+    const{cambio, guardarCambio, agregarCarrito, agregarMensaje} = useContext(CarritoContext);
+
     const{success} = useContext(NotificationContext);
     const { usuarioActual } = useContext(myAuthContext)
     const navigater = useNavigate()

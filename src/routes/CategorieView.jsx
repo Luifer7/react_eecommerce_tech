@@ -1,6 +1,5 @@
 import {Fragment, useContext, useEffect, useState} from "react";
 import { useParams } from 'react-router-dom';
-
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import CuadriculaProductos from "../components/temporal/CuadriculaProductos";
@@ -32,6 +31,8 @@ const CategorieView = () => {
 
         <Header/>
 
+
+          
         <div className="w-100 py-4 px-2">
 
         {

@@ -20,13 +20,13 @@ const CarritoProvaider = (props) => {
                 agregarCarrito,
                 guardarCambio,
                 agregarMensaje,
-                guardarMostrarCarrito
+                guardarMostrarCarrito,
             }}
         >
 
             {props.children}
         </CarritoContext.Provider>
-     );
+     )
 }
  
 export default CarritoProvaider;
